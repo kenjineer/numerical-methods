@@ -1,0 +1,17 @@
+{
+    "name": "math-221-1-project",
+    "version": "1.0.0",
+    "description": "This program is designed to implement the numerical methods of Gauss-Seidel and Doolittle using the C++ programming language. The program is presented as a console application, and by default, it allows for a maximum of 10 equations and a number precision of 5, which can be easily modified within the program. Although there is no fixed limit on the number of iterations that can be inputted, it is important to note that large data sets may be difficult to read on the console.",
+    "main": "main.cpp",
+    "scripts": {
+        "start": "npm run build && \"./build/NumericalMethods.exe\"",
+        "quickstart": "cd build && NumericalMethods.exe",
+        "dev": "onchange -i -k --await-write-finish 0 \"./src/*.*\" -- npm start",
+        "build": "g++.exe -fdiagnostics-color=always -g ./src/*.cpp ./src/*.h -o ./build/NumericalMethods.exe",
+        "release": "npm run rc && g++.exe -O3 -s -DNDEBUG ./src/*.cpp ./src/*.h ./build/build.res -o ./build/NumericalMethods.exe",
+        "rc": "windres build/build.rc -O coff -o build/build.res"
+    },
+    "devDependencies": {
+        "onchange": "^7.1.0"
+    }
+}
