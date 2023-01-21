@@ -9,7 +9,7 @@ How to run the program:
 2. Open build/NumericalMethods.exe to run the program
 
 If you want to run in development mode:
-1. Make sure that you have g++ compiler. (VSCode Setup)[https://code.visualstudio.com/docs/languages/cpp]
+1. Make sure that you have g++ compiler. [VSCode Setup](https://code.visualstudio.com/docs/languages/cpp)
 2. Install NodeJS (optional)
 3. From package.json, copy the value of "build" parameter and execute on a terminal.
 4. (NodeJS installed) Run in dev mode by executing "npm i" once, then "npm run dev". No need to run "npm i" again (dependencies saved inside node_modules)
